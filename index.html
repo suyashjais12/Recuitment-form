@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment form</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<script type="text/javascript">
+function validateForm() {
+  var x = document.forms["myForm"]["Name"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+
+<body>
+  <h1>Student Recruitment Form</h1>
+  <div class="sidenav">
+<img src="logo.png" alt=""><br><br>
+  <a href="#about">About</a><br>
+  <a href="#">Services</a><br>
+  <a href="#Projects">Projects</a><br>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="main">
+
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+<div class="bar">Personal Details</div> <br><br>
+<label>Enter your name: *</label>
+     <input type="text" name="Name" value=""><br><br><br><br>
+<hr><br><br><br><br>
+<label>Enter your email id: *</label>
+     <input type="email" name="Mail" value=""><br><br><br><br>
+<hr><br><br><br><br>
+<label>Enter your birth date:</label>
+     <input type="date" name=" " value=""><br><br><br><br>
+<hr><br><br><br><br>
+<label>Enter your phone number (mobile):</label>
+     <input type="tel" name=" " value=""><br><br><br><br>
+<label >Enter your phone number (WhatsApp):</label>
+     <input type="tel" name=" " value=""><br><br><br><br>
+
+<hr><br><br><br><br>
+<div class="bar">Educational Details</div><br><br>
+<label>Enter your college name: *</label>
+     <input type="text" name="CName " value=""><br><br><br><br>
+     <hr><br><br><br><br>
+<label>Enter the year you're currently studying in:</label>
+ <select class="opt" name="">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select><br><br><br><br> <hr><br><br><br><br>
+<label>Enter the branch you're studying in:</label>
+     <input type="text" name=" " value=""><br><br>
+<br><br>
+
+     <input type="submit">
+
+</form>
+</div>
+</body>
+</html>
